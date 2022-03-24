@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".WeatherActivity">
+    <item
+        android:id="@+id/action_change_sity"
+        android:orderInCategory="100"
+        android:title="@string/change_city"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_search" />
+    <item
+        android:id="@+id/action_daily"
+        android:orderInCategory="100"
+        android:title="@string/daily_weather"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_week"
+        android:orderInCategory="100"
+        android:title="@string/week_weather"
+        app:showAsAction="never" />
+
+    <item
+        android:title="Refresh"
+        android:orderInCategory="101"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:id="@+id/action_refresh" />
+</menu>

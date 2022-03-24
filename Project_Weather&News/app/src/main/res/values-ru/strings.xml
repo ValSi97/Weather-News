@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connect_error">Невозможно соединиться с OpenWeatherMap.org</string>
+    <string name="high_temp">Наибольшая: %s</string>
+    <string name="hint_text">Введите город (например, Москва, Мценск)</string>
+    <string name="humidity">Влажность: %s</string>
+    <string name="low_temp">Наименьшая: %s</string>
+    <string name="read_error">Невозможно прочитать данные о погоде</string>
+    <string name="weather_condition_image">Графическое отображение погодных условий</string>
+    <string name="empty_string">Введена пустая строка, попробуйте снова</string>
+    <string name="week_weather">На неделю</string>
+    <string name="daily_weather">На сегодня</string>
+    <string name="change_city">Ввести город</string>
+    <string name="type_of_weather">Тип прогноза</string>
+    <string name="day_temp">Днем: %s</string>
+    <string name="night_temp">Ночью: %s</string>
+    <string name="choice">Меню выбора</string>
+    <string name="title_activity_weather_activity">Погода на неделю</string>
+    <string name="details_weather">Подробности погоды</string>
+</resources>

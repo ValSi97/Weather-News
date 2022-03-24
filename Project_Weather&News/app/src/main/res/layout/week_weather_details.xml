@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Backgroundcolor"
+    android:weightSum="1"
+    android:id="@+id/main_content"
+    android:fitsSystemWindows="true"
+    tools:context="com.valsi.weathernews.DetailsWeather"><![CDATA[
+    >
+    ]]>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appbar"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="pressure"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/night_text"
+            android:layout_alignStart="@+id/humidity_text"
+            android:id="@+id/pressure_text"
+            android:textColor="#c7c5c5"
+            android:gravity="center_horizontal"
+            android:layout_width="180dp" />
+
+        <TextView
+            android:text="speed"
+            android:layout_height="wrap_content"
+            android:id="@+id/speed_text"
+            android:layout_above="@+id/max_text"
+            android:layout_alignStart="@+id/pressure_text"
+            android:textColor="#c7c5c5"
+            android:gravity="center_horizontal"
+            android:layout_width="180dp" />
+
+        <TextView
+            android:text="deg"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/max_text"
+            android:layout_alignStart="@+id/speed_text"
+            android:id="@+id/deg_text"
+            android:textColor="#c7c5c5"
+            android:gravity="center_horizontal"
+            android:layout_width="180dp" />
+
+        <TextView
+            android:text="description"
+            android:layout_height="100dp"
+            android:id="@+id/description_text"
+            android:textSize="22sp"
+            android:textColor="#c7c5c5"
+            android:layout_width="250dp"
+            android:layout_alignTop="@+id/weather_icon"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_horizontal"
+            android:layout_alignBottom="@+id/weather_icon" />
+
+        <TextView
+            android:text="max"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/max_text"
+            android:layout_below="@+id/min_text"
+            android:textColor="#c7c5c5"
+            android:gravity="center_horizontal"
+            android:layout_alignStart="@+id/min_text" />
+
+        <TextView
+            android:text="night"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/night_text"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/day_text"
+            android:textColor="#c7c5c5"
+            android:gravity="center_horizontal"
+            android:layout_alignStart="@+id/day_text" />
+
+        <TextView
+            android:text="min"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/min_text"
+            android:layout_width="100dp"
+            android:layout_below="@+id/night_text"
+            android:textColor="#c7c5c5"
+            android:gravity="center_horizontal"
+            android:layout_alignStart="@+id/night_text" />
+
+        <TextView
+            android:text="humidity"
+            android:layout_height="wrap_content"
+            android:id="@+id/humidity_text"
+            android:layout_alignBaseline="@+id/day_text"
+            android:layout_alignBottom="@+id/day_text"
+            android:layout_toEndOf="@+id/date_text"
+            android:textColor="#c7c5c5"
+            android:gravity="center_horizontal"
+            android:layout_width="180dp" />
+
+        <ImageView
+            app:srcCompat="@drawable/button_background"
+            android:id="@+id/weather_icon"
+            tools:layout_marginStart="50dp"
+            android:layout_marginTop="22dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:textColor="#c7c5c5"
+            android:layout_below="@+id/city_textView"
+            android:gravity="center_horizontal"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:text="Date"
+            android:textColor="#c7c5c5"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_text"
+            android:layout_width="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_alignBottom="@+id/city_textView"
+            android:layout_alignParentStart="true"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:text="City"
+            android:layout_marginTop="68dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#c7c5c5"
+            android:id="@+id/city_textView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/date_text"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:text="day"
+            android:textColor="#c7c5c5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:id="@+id/day_text"
+            tools:layout_width="100dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/description_text"
+            android:layout_toStartOf="@+id/description_text"
+            android:layout_marginLeft="10dp" />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
